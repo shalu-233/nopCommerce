@@ -486,6 +486,8 @@
                         $(this).siblings('.field-validation-custom').remove();
                     }
                 });
+
+                $('#@Html.IdFor(m => m.AgeVerification)').trigger('change');
             });
         </script>
     </div>
