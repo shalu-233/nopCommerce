@@ -6,10 +6,13 @@ pipeline {
     triggers {
         pollSCM('* * * * *')
     }
+    tools {
+        dotnetsdk 'DOTNET8'
+    }
     stages {
         stage('SCM') {
             steps {
-                git url: 'https://github.com/shalu-233/nopCommerce.git',
+                git url: 'https://github.com/shalu-233/nopcommerce.git',
                     branch: 'develop'
             }
         }
