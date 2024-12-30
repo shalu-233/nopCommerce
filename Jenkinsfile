@@ -12,7 +12,7 @@ pipeline {
     stages {
         stage('SCM') {
             steps {
-                git url: 'https://github.com/shalu-233/nopcommerce.git',
+                git url: 'https://github.com/dummyrepos/nopCommerceaug24.git',
                     branch: 'develop'
             }
         }
