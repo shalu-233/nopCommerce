@@ -25,9 +25,9 @@ pipeline {
     }
     post {
         success {
-            zipFile : './published.zip',
-            archive : true,
-            dir : './published'
+            zip zipFile : './published.zip',
+                archive : true,
+                dir : './published'
         }
     }
 }
