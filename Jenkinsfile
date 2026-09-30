@@ -23,11 +23,4 @@ pipeline {
             }
         }
     }
-    post {
-        success {
-            zip zipFile : './published.zip',
-                archive : true,
-                dir : './published'
-        }
-    }
 }
